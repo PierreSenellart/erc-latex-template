@@ -1,0 +1,56 @@
+\begin{table}  
+\centering
+  \caption{\todo{Acronym} budget (P-Y stands for person-year)}
+  \label{tab:budget}
+\renewcommand\STprintnum[1]{\numprint{#1}}
+\newcommand{\0}{\phantom{0}}
+\newcommand{\headingl}[1]{\multicolumn1l{\bfseries #1}}
+\newcommand{\headingr}[1]{\multicolumn1r{\bfseries #1}}
+\newcommand{\totals}[2]{\multicolumn#1r{\bfseries #2}}
+\begin{spreadtab}{{tabularx}{\linewidth}{X>{\nprounddigits2}r<{ \texteuro}l>{\nprounddigits2}r<{ \texteuro}}}
+\toprule
+@\headingl{Personnel}&@\headingr{Yearly cost}&@\headingl{~P-Y}&@\headingr{Total cost}\\
+\midrule
+%@PI: \todo{PI's name, implication}&0&\0:={0}&\STcopy{v4}{[-2,0]*[-1,0]}\\
+%@Senior staff &0&\0:={2}&\\
+%@Postdocs (\todo{Number, duration}) & 0& \0:={0}  &\\
+%@PhD students (\todo{Number, duration})  & 0& \0:={0}  &\\
+%@Engineer (\todo{Number, duration}) & 0 & \0:={0}&\\
+%@\totals3{i. Total direct costs for personnel: }&sum(d2:d6)\\
+%\midrule
+%\\
+%\midrule
+%@\headingl{Travel \& other direct costs}&@\headingr{Indiv.
+%              cost}&@\headingl{Number}&@\headingr{Cost}\\
+%\midrule
+%  \todo{}&0&:={0}&[-2,0]*[-1,0]\\
+%  \todo{}&0&:={0}&[-2,0]*[-1,0]\\
+%  \todo{}&0&:={0}&[-2,0]*[-1,0]\\
+%@\totals3{ii. Total other direct costs:}&[2,-1]+[2,-2]+[2,-3]\\
+%\midrule
+@PI: \todo{PI's name, implication}&0&\0:={0}&\STcopy{v4}{[-2,0]*[-1,0]}\\
+@Senior staff &0&\0:={0}&\\
+@Postdocs (\todo{Number, duration}) & 0& \0:={0}  &\\
+@PhD students (\todo{Number, duration})  & 0& \0:={0}  &\\
+@Engineer (\todo{Number, duration}) & 0 & \0:={0}&\\
+@\totals3{i. Total direct costs for personnel: }&sum(d2:d6)\\
+\midrule
+\\
+\midrule
+@\headingl{Travel \& other direct costs}&@\headingr{Indiv.
+              cost}&@\headingl{Number}&@\headingr{Cost}\\
+\midrule
+@\todo{Description}&0.00&:={0}&[-2,0]*[-1,0]\\
+@\todo{Description}&0.00&:={0}&[-2,0]*[-1,0]\\
+@\todo{Description}&0.00&:={0}&[-2,0]*[-1,0]\\
+@\totals3{ii. Total other direct costs:}&[2,-1]+[2,-2]+[2,-3]\\
+\\
+\midrule
+@\totals3{A. Total direct costs (i + ii):}&[0,-2]+[0,-8]\\
+@\totals3{B. Indirect costs (overheads):}&[0,-1]*0.25\\
+@\totals3{C. Subcontracting costs and other direct costs with no overhead:}&0\\
+@\totals3{Total estimated eligible costs (A + B + C):}&sum([0,-3]:[0,-1])\\
+@\totals3{Requested EU contribution:}&[0,-1]\\
+\bottomrule
+\end{spreadtab}
+\end{table}

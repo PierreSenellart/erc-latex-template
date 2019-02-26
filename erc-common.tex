@@ -1,0 +1,27 @@
+\usepackage[utf8]{inputenc}
+
+% Add any extra package you may need here.
+
+\addbibresource{../self.bib}
+\addbibresource{../references.bib}
+
+\newcommand*{\todo}[1]{\textbf{\color{red}[TODO: #1]}}
+
+\title{\todo{Proposal title}}
+\acronym{\todo{Proposal acronym}}
+\author[\todo{Last name}]{\todo{Full name}}
+\institution{\todo{institution}}
+
+\newcommand{\ercyear}{2019} % Change year here
+\newcommand{\erctype}{Consolidator} % or Starting, or Advanced
+
+% To put student names in italic in the bibliography, add
+% for each of the PI's students one line of the form:
+% \listadd{\italicnames}{Last, F}
+% where Last is the last name of the student and F the initial of his or
+% or her first name. In case of a middle name, write:
+% \listadd{\italicnames}{Last, F\bibinitperiod\bibinitdelim M}
+% where M is the initial of the middle name.
+
+% To put the PI's name in bold:
+\mknamesignature{\highlightname}{Last}{First}{}{}

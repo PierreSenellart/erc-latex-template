@@ -1,0 +1,26 @@
+\newcommand{\who}[1]{{\small\color{red!85!black}(#1)}}
+\begin{figure}
+  \pgfmathsetmacro{\myx}{\linewidth / 5 / 12}
+  \begin{ganttchart}[time slot unit=month,time slot
+      format=isodate-yearmonth, x
+    unit={\myx pt},vgrid={*{11}{draw=none},*1{dotted}}, y unit title
+    =1.6em, y unit chart=1.6em,
+  bar height=.8,milestone inline label node/.append
+style={anchor=east,right,inner sep=1em,green!50!black}]
+    % Adapt the starting date and ending date as needed
+    {2020-1}{2024-12}
+    \ganttset{milestone/.append style={green!50!black}}
+    \gantttitlecalendar{year}
+    \\
+    % Add \ganttbar's as needed
+    \ganttbar[inline]{\todo{Objective} \who{people involved}}{2020-1}{2024-12}
+    \\
+    % Add \gantmilestone's as needed
+    \ganttmilestone[inline]{\todo{Milestone}}{2021-12}
+    \\
+    \ganttset{link/.style={green!50!black}}
+    % Add \ganttlink's as needed
+  \end{ganttchart}
+  \caption{\todo{Caption}}
+  \label{fig:gantt}
+\end{figure}
