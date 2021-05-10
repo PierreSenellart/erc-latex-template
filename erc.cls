@@ -5,7 +5,6 @@
 \RequirePackage{mathptmx}
 \RequirePackage{graphicx}
 \graphicspath{{../img/}}
-\pdfsuppresswarningpagegroup=1
 \RequirePackage{amssymb}
 \RequirePackage{paralist}
 \RequirePackage{microtype}
