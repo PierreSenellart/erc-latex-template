@@ -33,10 +33,10 @@ ID)\par}\vspace{1cm}}
 \toprule
 \centering \textit{Title}&
 \centering \textit{Funding Source}&
-\centering\textit{Amount (\texteuro)}&
-\multicolumn{1}{c}{\textit{Period}}&
-\textit{Role of\\the PI}&
-\multicolumn{1}{c}{\textit{Relation to the current ERC}}\\
+\centering \textit{Amount (\texteuro)}&
+\centering \textit{Period}&
+\textit{Role of \newline the PI}&
+\textit{Relation to \newline the current ERC}\tabularnewline
 \midrule}
 {\bottomrule\end{tabular}}
 
