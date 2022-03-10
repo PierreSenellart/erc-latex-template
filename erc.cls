@@ -59,7 +59,7 @@
 
 \RequirePackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
-\clearscrheadfoot
+\clearpairofpagestyles
 \renewcommand{\headfont}{\normalfont}
 \ihead[\emph{\@authorshort}]{\emph{\@authorshort}}
 
